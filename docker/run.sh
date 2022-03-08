@@ -10,8 +10,8 @@ docker run \
     -it \
     --gpus=all \
     --ipc=host \
-    --name=2021-12-26-patch_sets_rl \
+    --name=my_docker \
     --env-file=.env \
     --volume=$PWD:/workspace \
-    2021-12-26-patch_sets_rl:latest \
+    my_docker:latest \
     ${@-fish}
