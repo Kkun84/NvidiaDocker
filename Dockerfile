@@ -1,5 +1,7 @@
 FROM nvidia/cuda:11.0.3-devel-ubuntu20.04
 
+LABEL maintainer="keisuke.kanda@human.ait.kyushu-u.ac.jp"
+
 # Timezone setting
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
 
